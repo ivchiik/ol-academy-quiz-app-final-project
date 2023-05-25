@@ -1,10 +1,10 @@
 import React from "react";
-import "../App.css"
+import "../App.css";
 
-const HomeButton = () => {
+const HomeButton = ({handleClick}) => {
   return (
     <div class="btn-conteiner">
-      <a class="btn-content" href="#">
+      <button class="btn-content" onClick={handleClick}>
         <span class="btn-title">Click Here</span>
         <span class="icon-arrow">
           <svg
@@ -39,7 +39,7 @@ const HomeButton = () => {
             </g>
           </svg>
         </span>
-      </a>
+      </button>
     </div>
   );
 };
