@@ -7,11 +7,6 @@ const GlobalStyles = createGlobalStyle`
   font-size: 1.15em;
   font-family: Arial, Helvetica, sans-serif;
   color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   }
 
   h1{
@@ -19,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h4{
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 `;
 
