@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import GlobalStyles from "./components/styles/Global";
+import StyledContainer from "./components/styles/Container.styled.js";
+import HomeButton from "./components/homeButton";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("./Quiz.js");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <StyledContainer>
+        <h1>Quiz</h1>
+        <h4>Check your genereal knolwedge here</h4>
+        <HomeButton handleClick={handleClick} />
+      </StyledContainer>
+    </>
   );
 }
 
