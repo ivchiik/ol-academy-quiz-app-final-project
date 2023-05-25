@@ -1,20 +1,19 @@
 import "./App.css";
-import { styled } from "styled-components";
+import GlobalStyles from "./components/styles/Global";
+import StyledContainer from "./components/styles/Container.styled.js";
+import HomeButton from "./components/homeButton";
 
 function App() {
   return (
-    <StyledHeader>
-      <h1>Quiz</h1>
-    </StyledHeader>
+    <>
+      <GlobalStyles />
+      <StyledContainer>
+        <h1 style={{marginTop: ""}}>Quiz</h1>
+        <h4>Check your genereal knolwedge here</h4>
+        <HomeButton onClick={() => {}} />
+      </StyledContainer>
+    </>
   );
 }
-
-const StyledHeader = styled.header`
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: aqua;
-`;
 
 export default App;
