@@ -1,20 +1,14 @@
 import "./App.css";
-import { styled } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+import GlobalStyles from "./components/styles/Global";
 
 function App() {
   return (
-    <StyledHeader>
+    <>
+      <GlobalStyles />
       <h1>Quiz</h1>
-    </StyledHeader>
+    </>
   );
 }
-
-const StyledHeader = styled.header`
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: aqua;
-`;
 
 export default App;
