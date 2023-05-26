@@ -6,6 +6,11 @@ const StyledContainer = styled.div`
   margin-top: 9em;
   background-color: #28282b;
   border-radius: 50%;
+  text-align: center;
+
+  h4{
+    padding-bottom: 2.5em;
+  }
 `;
 
 export default StyledContainer;

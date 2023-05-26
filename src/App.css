@@ -12,7 +12,7 @@
   align-items: center;
   padding: 5px 30px;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 30px;
   color: var(--color-text);
@@ -22,7 +22,8 @@
   box-shadow: 0 0 0.2em 0 var(--color-background);
 }
 
-.btn-content:hover, .btn-content:focus {
+.btn-content:hover,
+.btn-content:focus {
   transition: 0.5s;
   -webkit-animation: btn-content 1s;
   animation: btn-content 1s;
@@ -48,7 +49,7 @@
   position: relative;
   top: 6%;
 }
-  
+
 /* SVG */
 #arrow-icon-one {
   transition: 0.4s;
@@ -102,4 +103,39 @@
     outline: 0.2em solid var(--color-background);
     outline-offset: 0;
   }
+}
+
+#btnQuiz {
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btnQuiz:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+#btnNext{
+  width: 15%; 
+  height: 30px; 
+  margin-top: 23em; 
+  background: transparent;
+  border: 1px solid #ffffff80;
+  color: #ffffff80;
+  border-radius: 2px;
 }
