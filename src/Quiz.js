@@ -30,6 +30,25 @@ const Quiz = () => {
     fetchData();
   }, []);
 
+  // Save data to local storage
+  localStorage.setItem("myData", JSON.stringify(data));
+
+  // Set an expiration time (e.g., 5 minutes from now)
+  const expirationTime = new Date().getTime() + 10 * 60 * 1000;
+
+  // Save the expiration time in local storage
+  localStorage.setItem("expirationTime", expirationTime);
+
+  // Check if the data has expired
+  const currentTime = new Date().getTime();
+  const savedExpirationTime = localStorage.getItem("expirationTime");
+
+  if (currentTime > savedExpirationTime) {
+    // Data has expired, remove it from local storage
+    localStorage.removeItem("myData");
+    localStorage.removeItem("expirationTime");
+  }
+
   useEffect(() => {
     console.log(questions);
     console.log(answers);
